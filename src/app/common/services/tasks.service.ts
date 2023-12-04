@@ -1,15 +1,17 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { TASKS } from 'src/app/mock-tasks';
+import { Observable } from 'rxjs';
 import { Task } from 'src/app/task';
+
+const API_URL = 'http://localhost:5000/tasks';
 
 @Injectable({
   providedIn: 'root',
 })
 export class TasksService {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   getTasks(): Observable<Task[]> {
-    return of(TASKS);
+    return this.http.get<Task[]>(API_URL);
   }
 }
