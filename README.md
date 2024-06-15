@@ -1,6 +1,8 @@
 # AngularTaskTracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
+Sample project for a task tracker app built with Angular 15 and JSON-server for the mock backend.
+
+![Screencapture of angular-task-tracker](screenshot.png)
 
 ## Development server
 
