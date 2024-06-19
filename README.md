@@ -2,27 +2,26 @@
 
 Sample project for a task tracker app built with Angular 15 and JSON-server for the mock backend.
 
-![Screencapture of angular-task-tracker](screenshot.png)
+![Screencapture of angular-task-tracker](screencapture.png)
 
-## Development server
+## Build Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```bash
+# install dependencies
+$ npm install
 
-## Code scaffolding
+# json-server start
+$ npm run server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# serve with hot reload at localhost:4200
+$ ng start
 
-## Build
+# build for production
+$ ng build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# running unit tests
+$ ng test
+```
 
 ## Further help
 
